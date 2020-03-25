@@ -1,0 +1,27 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    margin: 30px 30px 30px 30px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.div-modulo{
+    font-family: 'Baloo 2', cursive;
+    color: darkred;
+}
+
+ul{
+    color: black;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+#github{
+    height: 30px;
+}

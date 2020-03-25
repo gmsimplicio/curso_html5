@@ -1,0 +1,119 @@
+<!DOCTYPE html><!-- -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulários - Curso HTML</title>
+</head>
+
+<body>
+    <h1>Aprendendo HTML - Formulários</h1>
+
+    <form action="cadastro.php" method="POST">
+        <!-- method GET ou POST
+            GET: envia as informações pela url
+            POST: envia as informações encapsuladas, sem que o visitante veja-->
+
+        <fieldset>
+            <!-- define um campo para o formulário -->
+            <legend>Informações pessoais</legend>
+
+            <!-- ATRIBUTOS:
+                required: faz o campo ser obrigatório
+                autofocus: faz o campo ser focado ao iniciar a página
+                disabled: deixa o campo desabilitado
+                maxlength: máximo de caracteres aceitável no campo
+                checked: inicia com um valor padrão
+                autocomplete: permite o campo autocompletar um email já salvo
+                placeholder: campo fica com texto de exemplo
+                speelcheck: retira a conferência de ortografia
+            -->
+
+            Nome:<br>
+            <input type="text" name="nome" autofocus><br><br>
+
+            Senha:<br>
+            <input type="password" name="senha" maxlength="6"><br><br>
+
+            Email:<br>
+            <input type="email" name="email" autocomplete="on" placeholder="seuemail@email.com"><br><br>
+
+            Imagem:<br>
+            <input type="file" name="imagem"><br><br>
+
+            <input type="hidden" name="id"><br><br>
+
+            URL:<br>
+            <input type="url" name="site"><br><br>
+
+            Search:<br>
+            <input type="search" name="pesquisa"><br><br>
+
+            Telefone:<br>
+            <input type="tel" name="telefone"><br><br>
+
+            Data:<br>
+            <input type="date" name="data"><br><br>
+
+            Hora:<br>
+            <input type="time" name="hora"><br><br>
+
+            Mês e ano:<br>
+            <input type="month" name="mes-ano"><br><br>
+
+            Semana:<br>
+            <input type="week" name="semana"><br><br>
+
+            Data e hora:<br>
+            <input type="datetime-local" name="data-hora"><br><br>
+
+            Mensagem:<br>
+            <textarea name="mensagem" rows="5" cols="30" spellcheck="false"
+                placeholder="Deixe sua mensagem aqui"></textarea><br><br>
+
+            <button type="button">Clique-me</button><br><br>
+
+            Escolha seu veículo:<br>
+            <select name="veiculo">
+                <optgroup label="Carros">
+                    <option value="camaro">Camaro</option>
+                    <option value="hilux">Hilux</option>
+                </optgroup>
+                <optgroup label="Motos">
+                    <option value="pop100">Pop 100</option>
+                    <option value="factor" selected>Factor</option>
+                </optgroup>
+            </select><br><br>
+
+            Escolha um curso:<br>
+            <input name="cursos" list="lista-cursos">
+            <datalist id="lista-cursos">
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="PHP7"></option>
+            </datalist><br><br>
+
+            Time:<br>
+            <input type="radio" name="time" value="operario" checked>Operário<br>
+            <input type="radio" name="time" value="comercial">Comercial<br>
+            <input type="radio" name="time" value="cene">CENE<br><br>
+
+            Cores:<br>
+            <input type="checkbox" name="cores" value="vermelho">Vermelho<br>
+            <input type="checkbox" name="cores" value="verde">Verde<br>
+            <input type="checkbox" name="cores" value="azul">Azul<br><br>
+
+            Quantidade:<br>
+            <input type="number" name="qtde" min="0" max="250" step="5"><br>
+            <br>
+            <input type="range" name="qtde"><br><br>
+
+            Cor:<br>
+            <input type="color" name="cor"><br><br>
+
+            <input type="submit" name="botao-enviar" value="Enviar"><br><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><!-- -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Menu / Menuitem - Curso HTML</title>
+    <style>
+        div {
+            width: 300px;
+            height: 80px;
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Aprendendo HTML - Menu / Menuitem</h1>
+
+    <div contextmenu="popup-menu">
+        Clique com o botão direito do mouse para ver o menu de contexto ajustado.
+    </div> <!-- div -->
+
+    <!--
+
+            ATUALMENTE ESSA TAG SÓ FUNCIONA NO NAVEGADOR FIREFOX
+
+        -->
+
+    <menu type="context" id="popup-menu">
+        <menuitem type="checkbox" checked>
+        Checkbox
+        </menuitem> <!-- menu checkbox -->
+        <hr>
+
+        <menuitem type="command" label="Este comando não faz nada"
+            icon="https://developer.cdn.mozilla.net/static/img/favicon144.png">
+        Os comandos não renderizam seu conteúdo.
+        </menuitem> <!-- menu command -->
+
+        <menuitem type="command" label="Este comando possui JavaScript" onclick="alert('comando clicado')">
+        Os comandos não renderizam seu conteúdo.
+        </menuitem> <!-- menu command -->
+        <hr>
+
+        <menuitem type="radio" radiogroup="group1">
+        Botão de opção 1
+        </menuitem> <!-- botão opção 1 -->
+
+        <menuitem type="radio" radiogroup="group1">
+        Botão de opção 2
+        </menuitem> <!-- botão opção 2 -->
+    </menu> <!-- menu popup-menu -->
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html><!-- -->
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tabelas - Curso HTML</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid #000;
+    }
+
+    th,
+    td {
+      padding: 7px;
+    }
+
+    .nome {
+      background-color: darkolivegreen;
+    }
+
+    .email {
+      background-color: darkseagreen;
+    }
+
+    .telefone {
+      background-color: darkolivegreen;
+    }
+
+    .cargo {
+      background-color: darkseagreen;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Aprendendo HTML - Tabelas</h1>
+
+  <table>
+    <caption>Cadastro de funcionários</caption> <!-- legenda da tabela-->
+
+    <colgroup>
+      <!-- organiza os grupos como classes-->
+      <col class="nome">
+      <col class="email">
+      <col class="telefone">
+      <col class="cargo">
+    </colgroup>
+
+    <thead>
+      <!-- define a linha como cabeçalho-->
+      <tr>
+        <!-- representa uma linha-->
+        <th>Nome</th> <!-- representa a coluna de título-->
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Cargo:</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- define as linhas como corpo da tabela-->
+      <tr>
+        <td>Gabriel</td> <!-- representa a coluna de conteúdo-->
+        <td>gabriel@email.com</td>
+        <td>(67) 99999-8888</td>
+        <td rowspan="2">Desenvolvedor Web</td>
+      </tr>
+
+      <tr>
+        <td>Duda</td>
+        <td>madu@email.com</td>
+        <td>(67) 99999-7777</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <!-- define a linha como rodapé-->
+      <tr>
+        <td colspan="4">Total: 2</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
